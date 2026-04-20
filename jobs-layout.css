@@ -1,0 +1,91 @@
+
+body {
+    font-family: Arial;
+    text-align: center;
+    margin: 0;
+    background: linear-gradient(to right, #5fa8d3, #00c9c8);
+}
+
+
+
+.boxx {
+    border: 1px solid rgb(255, 255, 255);
+    padding: 15px;
+    margin: 30px auto;
+    max-width: 750px;
+    background-color: #ffffff;
+}
+
+.Reports {
+    border: 1px solid black;  
+    padding: 10px;             
+    margin: 15px;              
+    width: 250px; 
+    text-align: center;       
+}
+
+.aside {
+    float: right;
+    width: 25%;
+    margin: 10px;
+    padding: 15px;
+    border: 2px solid #00f7ff;
+    background-color: #ffffff;
+}
+
+
+.Navbar {
+    text-align: center;
+    border: 3px solid #00f7ff;
+
+}
+
+.apply-btn {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.apply-btn:hover {
+    background-color: #333;
+    color: white;
+}
+
+
+
+
+.maxwidthtext {
+    max-width: 750px;
+    margin: 0 auto;
+    padding: 20px;
+    font-size: 15px;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 0;
+    margin: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: yellow;
+}
+
+
+

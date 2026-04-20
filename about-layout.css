@@ -1,0 +1,115 @@
+/*body and base*/
+body {
+    font-family: Arial;
+    font-size: 16px;
+    margin: 10;
+    background: linear-gradient(to right, #5fa8d3, #00c9c8);
+    color: white;
+}
+
+
+/*header*/
+header {
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    text-align:center;
+}
+
+header nav {
+    display: flex;
+    text-align: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+#SI {
+    font-style: bold;
+    color: #00479e;
+}
+/*image formatting*/
+img {
+    width: 300px;
+    height: auto;
+}
+
+figure {
+    border: 2px solid black;
+    padding: 10px;
+    width: fit-content;
+    float: right;
+    margin-top: -450px;
+    margin-right: 350px;
+}
+
+figure img {
+    width: 400px;
+    height: auto;
+}
+
+figcaption {
+    text-align: center;
+    font-style: italic;
+    margin-top: 5px;
+}
+
+/*table with hex colours and hover effects*/
+table {
+    border-collapse: collapse;
+    width: 100%;
+    border: 2px solid black;
+}
+table caption {
+    caption-side: top;
+    text-align:center;
+    padding:0.25rem 0;
+    color: #00479e;
+}
+
+
+th, td {
+    border: 1px solid black;
+    padding: 10px;
+}
+
+th,tr.name {
+    color: #00479e;
+}
+
+/*hover-effect whole row highlights*/
+tr:hover td, 
+tr:hover th.name {
+    background-color: #f4f4f4;
+    cursor: default;
+    transition: 0.2s ease, color 0.2s ease;
+
+}
+
+footer {
+    display: block;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 0;
+    margin: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: yellow;
+}
+

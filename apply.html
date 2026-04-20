@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head> <!-- Meta Data and Link to CSS sheet -->
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/apply-layout.css">
+    <meta charset="UTF-8">
+    <meta name="description" content="Position Application Page">
+    <meta name="keywords" content="HTML5">
+    <meta name="author" content="Jaydon Cueva">
+    <title>Application Page</title>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="jobs.html">Jobs</a></li>
+            <li><a href="apply.html">Apply</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+    <header>
+        <h1 style="text-align: center;">
+            Application Page
+        </h1>
+    </header>
+            <!-- Links to container in CSS -->
+    <div class="container"> 
+        <form method="post" action="https://swinburne.instructure.com/courses/71841/assignments/formtest.php.">
+            <h2>For (Job Reference Number)</h2> <!-- Exactly 5 alphanumeric characters -->
+            <fieldset>
+
+                <legend>Personal Details</legend>
+                <p>
+                    <label for="applicant-first-name">First Name</label>
+                    <input type="text" name="applicant-first-name" id="applicant-first-name" minlength="2"
+                        maxlength="20" required="required" pattern="^[A-Za-z]+$">
+                </p>
+                <p>
+                    <label for="applicant-last-name">Last Name</label>
+                    <input type="text" name="applicant-last-name" id="applicant-last-name" minlength="2" maxlength="20"
+                        required="required" pattern="^[A-Za-z]+$">
+                </p>
+                <p>
+                    <label for="DOB">Date of Birth</label>
+                    <input type="text" name="DOB" id="DOB" size="10" required="required" placeholder="dd/mm/yyyy"
+                        pattern="^(0[1-9]|[12][0-9]|3[01])\/(0[1-9]|1[012])\/[0-9]{4}$">
+                </p>
+            </fieldset>
+
+            <fieldset>
+
+                <legend>Gender</legend> <!-- radio buttons (field + legend) -->
+                <p>
+                    <input type="radio" name="applicant-gender" id="other-gender" value="other-gender"
+                        required="required">
+
+                    <!-- Maybe we can display text input if this option is selected-->
+                    <label for="other-gender">Other</label>
+
+                    <input type="radio" name="applicant-gender" id="male" value="male" required="required">
+                    <label for="male">Male</label>
+
+                    <input type="radio" name="applicant-gender" id="female" value="female" required="required">
+                    <label for="female">Female</label>
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Address</legend>
+                <p>
+                    <label for="street-address">Street</label> <!-- max 40 characters -->
+                    <input type="text" name="street-address" id="street-address" minlength="2" maxlength="20"
+                        required="required">
+                </p>
+                <p>
+                    <label for="suburb-town">Suburb/Town</label> <!-- max 40 characters -->
+                    <input type="text" name="suburb-town" id="suburb-town" minlength="2" maxlength="20"
+                        required="required">
+                </p>
+                <p>
+                    <label for="state">State</label> <!-- dropdown: vic, nsw, qld, nt, wa, sa, tas, act -->
+                    <select name="State" id="state" required="required">
+                        <option value="">Please Select</option>
+                        <option value="vic">VIC</option>
+                        <option value="nsw">NSW</option>
+                        <option value="qld">QLD</option>
+                        <option value="nt">NT</option>
+                        <option value="wa">WA</option>
+                        <option value="sa">SA</option>
+                        <option value="tas">TAS</option>
+                        <option value="act">ACT</option>
+                    </select>
+                </p>
+                <p>
+                    <label for="post-code">Post Code</label>
+                    <input type="text" name="post-code" id="post-code" minlength="4" maxlength="4" pattern="[0-9]{4}"
+                        title="Please Enter 4 digits" required="required">
+
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Contact</legend>
+                <p>
+                    <label for="email-contact">Email</label> <!-- valid format -->
+                    <input type="email" name="email-contact" id="email-contact"
+                        pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" required="required">
+                </p>
+                <p>
+                    <label for="phone-contact">Phone</label> <!-- 8-12 digits -->
+                    <input type="text" name="phone-contact" id="phone-contact" pattern="[0-9]{7,10}" minlength="8"
+                        maxlength="12" required="required">
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Skills</legend> <!-- Checkbox for selecting multiple skills -->
+                <p>
+                    <label for="html">HTML</label> <!-- checkbox inputs -->
+                    <input type="checkbox" name="skills[]" id="html" value="html" checked="checked">
+                    <label for="css">CSS</label>
+                    <input type="checkbox" name="skills[]" id="css" value="css">
+                    <label for="javascript">JavaScript</label>
+                    <input type="checkbox" name="skills[]" id="javascript" value="javascript">
+                    <label for="php">PHP</label>
+                    <input type="checkbox" name="skills[]" id="php" value="php">
+                    <label for="mysql">MySQL</label>
+                    <input type="checkbox" name="skills[]" id="mysql" value="mysql">
+                </p>
+                <p>
+                    <label for="other-skills">Other Skills</label> <!-- text area -->
+                    <textarea id="other-skills" name="other-skills" rows="4" cols="40"
+                        placeholder="List some additional skills here"></textarea>
+                </p>
+            </fieldset>
+            <!-- Submit and reset button -->
+            <input type="submit" value="Submit Application">
+            <input type="reset" value="Reset Application">
+        </form>
+    </div>
+    <!-- Footer section -->
+    <footer>
+        <p>
+            Swinburn COS10026 2026 &copy;
+        </p>
+    </footer>
+</body>
