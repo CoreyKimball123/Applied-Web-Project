@@ -33,39 +33,27 @@ Styles the aside box for the qualifications inside the job descriptionbox
 
 
  /*
-customises the apply now buttons for Customer Success Manager job description and adds a hover effect to it.
+customises the apply now buttons
  */
 
-button[aria-label="Button-to-apply-for-Telehealth-Support-Worker-job"] {
+.apply-btn,
+.Button-to-apply-for-Digital-Health-Wellness-role {
+    display: inline-block;
     padding: 8px 12px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    
-}
-
-
-button[aria-label="Button-to-apply-for-Telehealth-Support-Worker-job"]:hover {
-    background-color: #333;
+    background-color: #00c9c8;
     color: white;
-}
-
-
- /*
-customises the apply now button for Data Analyst job description and adds a hover effect to it.
- */
-
-button[aria-label="Button-to-apply-for-Digital-Health-Wellness-role"] {
-    padding: 10px;
+    text-decoration: none;
     border: none;
     border-radius: 5px;
     cursor: pointer;
 }
 
-button[aria-label="Button-to-apply-for-Digital-Health-Wellness-role"]:hover {
+.apply-btn:hover,
+.Button-to-apply-for-Digital-Health-Wellness-role:hover {
     background-color: #333;
     color: white;
-}   
+}
+
 
 
  /*
