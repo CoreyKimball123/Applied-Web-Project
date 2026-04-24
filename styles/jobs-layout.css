@@ -1,31 +1,29 @@
-
-body {
-    font-family: Arial;
-    text-align: center;
-    margin: 0;
-    background: linear-gradient(to right, #5fa8d3, #00c9c8);
-}
+/*
+ * Project: Jobs page
+ * Author: Awer Awier
+ * Created 19/04/26
+ */
 
 
+ /*
+Creates a box for both job descriptions with the ID selector .boxx
+ */
 
 .boxx {
     border: 1px solid rgb(255, 255, 255);
-    padding: 15px;
+    padding: 20px;
     margin: 30px auto;
     max-width: 750px;
     background-color: #ffffff;
 }
 
-.Reports {
-    border: 1px solid black;  
-    padding: 10px;             
-    margin: 15px;              
-    width: 250px; 
-    text-align: center;       
-}
+ /*
+Styles the aside box for the qualifications inside the job descriptionbox
+ */
 
 .aside {
     float: right;
+    text-align: center;
     width: 25%;
     margin: 10px;
     padding: 15px;
@@ -34,58 +32,69 @@ body {
 }
 
 
-.Navbar {
-    text-align: center;
-    border: 3px solid #00f7ff;
+ /*
+customises the apply now buttons for Customer Success Manager job description and adds a hover effect to it.
+ */
 
-}
-
-.apply-btn {
+button[aria-label="Button-to-apply-for-Telehealth-Support-Worker-job"] {
     padding: 8px 12px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    
 }
 
-.apply-btn:hover {
+
+button[aria-label="Button-to-apply-for-Telehealth-Support-Worker-job"]:hover {
     background-color: #333;
     color: white;
 }
 
 
+ /*
+customises the apply now button for Data Analyst job description and adds a hover effect to it.
+ */
 
+button[aria-label="Button-to-apply-for-Digital-Health-Wellness-role"] {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[aria-label="Button-to-apply-for-Digital-Health-Wellness-role"]:hover {
+    background-color: #333;
+    color: white;
+}   
+
+
+ /*
+customises max width style for the text in the job description and adds padding to it to make it more readable.
+ */
 
 .maxwidthtext {
-    max-width: 750px;
+    max-width: 750px;  /*  doesnâ€™t get any wider than 750px */
     margin: 0 auto;
-    padding: 20px;
+    padding: 10px;    /* Creates space in the text */
     font-size: 15px;
 }
 
-/* Navigation Bar */
-nav {
+.Heading {
+    text-align: center;
+    color: white; 
+}
+
+
+/* Footer */
+footer {
+    margin-top: 40px;
+    padding: 15px;
     background-color: rgba(0, 0, 0, 0.3);
-    padding: 10px 0;
+    text-align: center;
 }
 
-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    padding: 0;
-    margin: 0;
-}
-
-nav a {
-    text-decoration: none;
+/* ID selector */
+#footer {
+    margin: 0 15px;
     color: white;
-    font-weight: bold;
 }
-
-nav a:hover {
-    color: yellow;
-}
-
-
-
